@@ -1,5 +1,6 @@
 from .letters import YIDDISH_LETTER_LOOKUP, ROMAN_LOOKUP
 
+
 def yiddish_to_roman(s):
     r = []
     for c in s:
