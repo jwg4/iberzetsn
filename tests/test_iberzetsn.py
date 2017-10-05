@@ -7,6 +7,9 @@ class TestYiddishToRoman(unittest.TestCase):
     def test_simple_word(self):
         self.assertEqual(yiddish_to_roman("שול"), "shul")
 
+    def test_simple_word_2(self):
+        self.assertEqual(yiddish_to_roman("װוּרשט"), "vursht")
+
 
 class TestRomanToYiddish(unittest.TestCase):
     def test_simple_word(self):

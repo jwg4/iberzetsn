@@ -4,10 +4,16 @@ YIDDISH_LETTERS = [
     ("ל", "l"),
     ("ד", "d"),
     ("י", "i"),
+    ("ר", "r"),
+    ("ט", "t"),
+]
+
+YIDDISH_DOUBLE_LETTERS = [
+    ("װ", "v"),
 ]
 
 YIDDISH_LETTER_LOOKUP = {
-    x[0]: x[1] for x in YIDDISH_LETTERS
+    x[0]: x[1] for x in YIDDISH_LETTERS + YIDDISH_DOUBLE_LETTERS
 }
 
 ROMAN_LETTER_LOOKUP = {
