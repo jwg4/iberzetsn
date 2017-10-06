@@ -12,6 +12,9 @@ def yiddish_to_roman(s):
 def roman_to_yiddish(s):
     if not s:
         return ""
+    if " " in s:
+        words = s.split(" ")
+        return " ".join(roman_to_yiddish(w) for w in words)
     prefixes = [ x for x in ROMAN_LOOKUP if s.startswith(x) ]
     if prefixes:
         prefixes.sort(key=len)
