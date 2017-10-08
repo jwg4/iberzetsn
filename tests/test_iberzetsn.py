@@ -21,8 +21,8 @@ class TestRomanToYiddish(unittest.TestCase):
 
 class TestRoundTripFromYiddish(unittest.TestCase):
     def do_round_trip_and_compare(self, word):
-        roman = roman_to_yiddish(word)
-        result = yiddish_to_roman(roman)
+        roman = yiddish_to_roman(word)
+        result = roman_to_yiddish(roman)
         self.assertEqual(result, word)
 
     def test_word(self):
