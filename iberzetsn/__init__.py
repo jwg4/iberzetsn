@@ -2,6 +2,11 @@ from .letters import YIDDISH_LETTER_LOOKUP, ROMAN_LOOKUP
 
 
 def yiddish_to_roman(s):
+    if not s:
+        return ""
+    if " " in s:
+        words = s.split(" ")
+        return " ".join(yiddish_to_roman(w) for w in words)
     r = []
     for c in s:
         if c in YIDDISH_LETTER_LOOKUP:
