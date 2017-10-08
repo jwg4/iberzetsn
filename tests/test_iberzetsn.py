@@ -17,3 +17,13 @@ class TestRomanToYiddish(unittest.TestCase):
 
     def test_simple_two_word_phrase(self):
         self.assertEqual(roman_to_yiddish("dos broyt"), "דאׇס ברױט")
+
+
+class TestRoundTripFromYiddish(unittest.TestCase):
+    def do_round_trip_and_compare(self, word):
+        roman = roman_to_yiddish(word)
+        result = yiddish_to_roman(roman)
+        self.assertEqual(result, word)
+
+    def test_word(self):
+        self.do_round_trip_and_compare("דער שטאׇף")
