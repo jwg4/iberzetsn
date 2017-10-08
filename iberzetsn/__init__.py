@@ -8,9 +8,14 @@ def yiddish_to_roman(s):
         words = s.split(" ")
         return " ".join(yiddish_to_roman(w) for w in words)
     r = []
+    b = ""
     for c in s:
         if c in YIDDISH_LETTER_LOOKUP:
             r.append(YIDDISH_LETTER_LOOKUP[c])
+        elif b + c in YIDDISH_LETTER_LOOKUP:
+            r.append(YIDDISH_LETTER_LOOKUP[b + c])
+        else:
+            b = c
     return "".join(r)
 
 
