@@ -12,7 +12,7 @@ matrix:
 install:
 - pip install flake8
 script:
-- flake8 . --max-complexity 5 --max-line-length 99 --ignore E201,E202,E402
+- flake8 . --max-complexity 6 --max-line-length 99 --ignore E201,E202,E402
 - python -m doctest README.md
 - python setup.py test
 notifications:
