@@ -37,3 +37,6 @@ class TestRoundTripFromRoman(unittest.TestCase):
 
     def test_word(self):
         self.do_round_trip_and_compare("nakht")
+
+    def test_another_word(self):
+        self.do_round_trip_and_compare("rusland")
