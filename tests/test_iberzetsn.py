@@ -25,7 +25,7 @@ class TestRoundTripFromYiddish(unittest.TestCase):
         result = roman_to_yiddish(roman)
         self.assertEqual(result, word)
 
-    def test_word(self):
+    def test_two_words(self):
         self.do_round_trip_and_compare("דער שטאׇף")
 
 
