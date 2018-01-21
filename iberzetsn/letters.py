@@ -6,6 +6,7 @@ YIDDISH_LETTERS = [
     ("ד", "d"),
     ("ה", "h"),
     ("ו", "u"),
+    ("ז", "z"),
     ("ט", "t"),
     ("י", "i"),
     ("כ", "kh"),
@@ -25,6 +26,10 @@ YIDDISH_DOUBLE_LETTERS = [
     ("ױ", "oy"),
 ]
 
+YIDDISH_SYMBOLS = [
+    ("־", "-"),
+]
+
 COMPOSITE_SOUNDS = [
     ("ייִ", "yi"),
     ("ח", "kha"),
@@ -38,7 +43,7 @@ YIDDISH_WORDS = [
 ]
 
 YIDDISH_LETTER_LOOKUP = {
-    x[0]: x[1] for x in YIDDISH_LETTERS + YIDDISH_DOUBLE_LETTERS
+    x[0]: x[1] for x in YIDDISH_LETTERS + YIDDISH_DOUBLE_LETTERS + YIDDISH_SYMBOLS
 }
 
 YIDDISH_PREFIX_LOOKUP = {
@@ -51,6 +56,10 @@ YIDDISH_WORD_LOOKUP = {
 
 ROMAN_LETTER_LOOKUP = {
     x[1]: x[0] for x in YIDDISH_LETTERS
+}
+
+ROMAN_SYMBOL_LOOKUP = {
+    x[1]: x[0] for x in YIDDISH_SYMBOLS
 }
 
 ROMAN_DOUBLE_LETTER_LOOKUP = {
@@ -67,5 +76,6 @@ ROMAN_COMPOSITE_LOOKUP = {
 
 ROMAN_LOOKUP = ROMAN_LETTER_LOOKUP.copy()
 ROMAN_LOOKUP.update(ROMAN_DOUBLE_LETTER_LOOKUP)
+ROMAN_LOOKUP.update(ROMAN_SYMBOL_LOOKUP)
 ROMAN_LOOKUP.update(ROMAN_COMPOSITE_LOOKUP)
 ROMAN_LOOKUP.update({ x: ROMAN_LETTER_LOOKUP[ROMAN_ALIAS_LOOKUP[x]] for x in ROMAN_ALIAS_LOOKUP })

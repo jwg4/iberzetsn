@@ -36,6 +36,9 @@ class TestRomanToYiddish(unittest.TestCase):
     def test_word_with_melupm_vov(self):
         self.assertEqual(roman_to_yiddish("tuung"), "טוּונג")
 
+    def test_word_with_hyphen(self):
+        self.assertEqual(roman_to_yiddish("zoo-gortn"), "זאׇאׇ־גאׇרטן")
+
 
 class TestRoundTripFromYiddish(unittest.TestCase):
     def do_round_trip_and_compare(self, word):
