@@ -23,12 +23,21 @@ YIDDISH_DOUBLE_LETTERS = [
     ("ױ", "oy"),
 ]
 
+COMPOSITE_SOUNDS = [
+    ("ייִ", "yi")
+]
+
 YIDDISH_WORDS = [
     ("אויף", "af"),
+    ("ייִדיש", "yiddish"),
 ]
 
 YIDDISH_LETTER_LOOKUP = {
     x[0]: x[1] for x in YIDDISH_LETTERS + YIDDISH_DOUBLE_LETTERS
+}
+
+YIDDISH_PREFIX_LOOKUP = {
+    x[0]: x[1] for x in COMPOSITE_SOUNDS
 }
 
 YIDDISH_WORD_LOOKUP = {
@@ -48,7 +57,7 @@ ROMAN_ALIAS_LOOKUP = {
 }
 
 ROMAN_COMPOSITE_LOOKUP = {
-    "yi": "ייִ"
+    x[1]: x[0] for x in COMPOSITE_SOUNDS
 }
 
 ROMAN_LOOKUP = ROMAN_LETTER_LOOKUP.copy()
