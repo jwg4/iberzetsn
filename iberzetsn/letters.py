@@ -22,8 +22,16 @@ YIDDISH_DOUBLE_LETTERS = [
     ("ױ", "oy"),
 ]
 
+YIDDISH_WORDS = [
+    ("אויף", "af"),
+]
+
 YIDDISH_LETTER_LOOKUP = {
     x[0]: x[1] for x in YIDDISH_LETTERS + YIDDISH_DOUBLE_LETTERS
+}
+
+YIDDISH_WORD_LOOKUP = {
+    x[0]: x[1] for x in YIDDISH_WORDS
 }
 
 ROMAN_LETTER_LOOKUP = {

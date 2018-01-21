@@ -1,4 +1,4 @@
-from .letters import YIDDISH_LETTER_LOOKUP, ROMAN_LOOKUP
+from .letters import YIDDISH_LETTER_LOOKUP, YIDDISH_WORD_LOOKUP, ROMAN_LOOKUP
 
 
 def yiddish_to_roman(s):
@@ -7,6 +7,8 @@ def yiddish_to_roman(s):
     if " " in s:
         words = s.split(" ")
         return " ".join(yiddish_to_roman(w) for w in words)
+    if s in YIDDISH_WORD_LOOKUP:
+        return YIDDISH_WORD_LOOKUP[s]
     r = []
     b = ""
     for c in s:
