@@ -33,6 +33,9 @@ class TestRomanToYiddish(unittest.TestCase):
     def test_word_with_implied_vowels(self):
         self.assertEqual(roman_to_yiddish("golmeser"), "גאׇלמעסער")
 
+    def test_word_with_melupm_vov(self):
+        self.assertEqual(roman_to_yiddish("tuung"), "טוּונג")
+
 
 class TestRoundTripFromYiddish(unittest.TestCase):
     def do_round_trip_and_compare(self, word):
