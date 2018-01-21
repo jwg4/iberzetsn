@@ -24,7 +24,9 @@ YIDDISH_DOUBLE_LETTERS = [
 ]
 
 COMPOSITE_SOUNDS = [
-    ("ייִ", "yi")
+    ("ייִ", "yi"),
+    ("ח", "kha"),
+    ("בֿ", "ve"),
 ]
 
 YIDDISH_WORDS = [
