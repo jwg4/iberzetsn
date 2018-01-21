@@ -30,6 +30,8 @@ class TestRomanToYiddish(unittest.TestCase):
     def test_word_with_implied_vowels(self):
         self.assertEqual(roman_to_yiddish("khaverte"), "חבֿרטע")
     
+    def test_word_with_implied_vowels(self):
+        self.assertEqual(roman_to_yiddish("golmeser"), "גאׇלמעסער")
 
 
 class TestRoundTripFromYiddish(unittest.TestCase):
