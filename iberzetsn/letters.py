@@ -14,6 +14,7 @@ YIDDISH_LETTERS = [
     ("ף", "f"),
     ("ר", "r"),
     ("ש", "sh"),
+    ("ײ", "ey"),
 ]
 
 YIDDISH_DOUBLE_LETTERS = [
