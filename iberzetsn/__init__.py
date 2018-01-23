@@ -11,6 +11,10 @@ def yiddish_to_roman(s):
         return " ".join(yiddish_to_roman(w) for w in words)
     if s in YIDDISH_WORD_LOOKUP:
         return YIDDISH_WORD_LOOKUP[s]
+    return _yiddish_to_roman_simple_word(s)
+
+
+def _yiddish_to_roman_simple_word(s):
     for y in YIDDISH_PREFIX_LOOKUP:
         if s.startswith(y):
             ss = s[len(y):]
