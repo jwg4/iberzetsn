@@ -40,6 +40,7 @@ COMPOSITE_SOUNDS = [
     ("בֿ", "ve"),
     ("וּו", "uu"),
     ("דזש", "dzh"),
+    ("זש", "zh"),
 ]
 
 YIDDISH_WORDS = [
