@@ -3,53 +3,6 @@ import unittest
 from iberzetsn import yiddish_to_roman, roman_to_yiddish
 
 
-class TestYiddishToRoman(unittest.TestCase):
-    def test_simple_word(self):
-        self.assertEqual(yiddish_to_roman("שול"), "shul")
-
-    def test_simple_word_2(self):
-        self.assertEqual(yiddish_to_roman("װוּרשט"), "vursht")
-
-    def test_simple_word_3(self):
-        self.assertEqual(yiddish_to_roman("שטײט"), "shteyt")
-
-    def test_exceptional_word(self):
-        self.assertEqual(yiddish_to_roman("אויף"), "af")
-
-    def test_exceptional_word_2(self):
-        self.assertEqual(yiddish_to_roman("ייִדיש"), "yiddish")
-
-    def test_word_with_compound_vowels(self):
-        self.assertEqual(yiddish_to_roman("דזשוכע"), "dzhukhe")
-
-    @unittest.skip("Longer phrase with several difficult words.")
-    def test_phrase_with_punctuation(self):
-        self.assertEqual(
-            yiddish_to_roman("שטײט אױף, איר אַלע, װער ווי שקלאַפֿן"),
-            "Shteyt af, ayr ole shklaven"
-        )
-
-
-class TestRomanToYiddish(unittest.TestCase):
-    def test_simple_word(self):
-        self.assertEqual(roman_to_yiddish("yiddish"), "ייִדיש")
-
-    def test_simple_two_word_phrase(self):
-        self.assertEqual(roman_to_yiddish("dos broyt"), "דאׇס ברױט")
-
-    def test_word_with_implied_vowels(self):
-        self.assertEqual(roman_to_yiddish("khaverte"), "חבֿרטע")
-
-    def test_word_with_straightforward_vowels(self):
-        self.assertEqual(roman_to_yiddish("golmeser"), "גאׇלמעסער")
-
-    def test_word_with_melupm_vov(self):
-        self.assertEqual(roman_to_yiddish("tuung"), "טוּונג")
-
-    def test_word_with_hyphen(self):
-        self.assertEqual(roman_to_yiddish("zoo-gortn"), "זאׇאׇ־גאׇרטן")
-
-
 class TestRoundTripFromYiddish(unittest.TestCase):
     def do_round_trip_and_compare(self, word):
         roman = yiddish_to_roman(word)
