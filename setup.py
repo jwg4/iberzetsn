@@ -9,5 +9,5 @@ setup(
     author_email='jack.grahl@gmail.com',
     license='MIT',
     packages=["iberzetsn"],
-    tests_module="tests"
+    test_suite="tests"
 )
