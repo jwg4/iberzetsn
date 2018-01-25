@@ -1,3 +1,5 @@
+# coding=utf-8
+
 import unittest
 
 from iberzetsn import yiddish_to_roman, roman_to_yiddish
