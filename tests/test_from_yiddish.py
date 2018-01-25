@@ -22,6 +22,9 @@ class TestYiddishToRoman(unittest.TestCase):
     def test_word_with_compound_vowels(self):
         self.assertEqual(yiddish_to_roman("דזשוכע"), "dzhukhe")
 
+    def test_word_with_compound_vowels_2(self):
+        self.assertEqual(yiddish_to_roman("טשיקאַװע"), "tshikave")
+
     @unittest.skip("Longer phrase with several difficult words.")
     def test_phrase_with_punctuation(self):
         self.assertEqual(
