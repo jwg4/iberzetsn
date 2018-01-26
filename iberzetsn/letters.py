@@ -18,10 +18,10 @@ YIDDISH_LETTERS = [
     ("ס", "s"),
     ("ע", "e"),
     ("ף", "f"),
+    ("צ", "ts"),
     ("ק", "k"),
     ("ר", "r"),
     ("ש", "sh"),
-    ("ײ", "ey"),
 ]
 
 YIDDISH_FINAL_LETTERS = [
@@ -31,6 +31,7 @@ YIDDISH_FINAL_LETTERS = [
 YIDDISH_DOUBLE_LETTERS = [
     ("װ", "v"),
     ("ױ", "oy"),
+    ("ײ", "ey"),
 ]
 
 YIDDISH_SYMBOLS = [
