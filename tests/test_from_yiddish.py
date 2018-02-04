@@ -33,6 +33,9 @@ class TestYiddishToRoman(unittest.TestCase):
     def test_simple_word_with_multiple_compound_sounds(self):
         self.assertEqual(yiddish_to_roman("צװײ"), "tsvey")
 
+    def test_word_with_final_letter(self):
+        self.assertEqual(yiddish_to_roman("אַרץ"), "arts")
+
     @unittest.skip("Hebrew word used in yiddish")
     def test_word_with_hebrew_letters(self):
         self.assertEqual(yiddish_to_roman("תּנ״ך"), "tanakh")
