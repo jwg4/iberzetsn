@@ -9,7 +9,7 @@ def roman_to_yiddish(s):
         return " ".join(roman_to_yiddish(w) for w in words)
     if s in ROMAN_FINAL_LOOKUP:
         return ROMAN_FINAL_LOOKUP[s]
-    prefixes = [ x for x in ROMAN_LOOKUP if s.startswith(x) ]
+    prefixes = [x for x in ROMAN_LOOKUP if s.startswith(x)]
     if prefixes:
         prefixes.sort(key=len)
         x = prefixes[-1]
