@@ -28,7 +28,7 @@ YIDDISH_FINAL_LETTERS = [
     ("ם", "m"),
     ("ן", "n"),
     ("ף", "f"),
-    ("ץ", "ts")
+    ("ץ", "ts"),
 ]
 
 YIDDISH_DOUBLE_LETTERS = [

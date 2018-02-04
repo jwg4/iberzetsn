@@ -29,3 +29,7 @@ class TestRomanToYiddish(unittest.TestCase):
 
     def test_word_with_final_letter(self):
         self.assertEqual(roman_to_yiddish("tsitsn"), "ציצן")
+
+    def test_word_with_final_letter_2(self):
+        self.assertEqual(roman_to_yiddish("arts"), "אַרץ")
+
