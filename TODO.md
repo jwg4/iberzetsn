@@ -9,7 +9,6 @@ The full alphabet, as per https://en.wikipedia.org/wiki/Yiddish_orthography#The_
 
 # Final forms:
 - ך 	lange khof 	Final form. Only used at the end of a word.
-- ץ 	lange tsadek 	Final form. Only used at the end of a word.
 
 # Only in Hebrew words:
 - בֿ 	v 	veys 	Only used in words of Semitic origin.
