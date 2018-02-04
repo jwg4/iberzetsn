@@ -26,3 +26,6 @@ class TestRomanToYiddish(unittest.TestCase):
 
     def test_word_with_compound_vowel(self):
         self.assertEqual(roman_to_yiddish("zhurnal"), "זשורנאַל")
+
+    def test_word_with_final_letter(self):
+        self.assertEqual(roman_to_yiddish("tsitsn"), "ציצן")
