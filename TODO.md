@@ -5,11 +5,10 @@ The full alphabet, as per https://en.wikipedia.org/wiki/Yiddish_orthography#The_
 - וּ 	u 	(none) 	ʊ 	u 	melupm vov 	Only used adjacent to ו or before י.
 - יִ 	i 	(none) 	i 	khirik yud 	Only used following a consonantal י or adjacent to another vowel.
 - ײַ 	ay 	(none) 	aj 	pasekh tsvey yudn 	
-- ך 	lange khof 	Final form. Only used at the end of a word.
-- ם 	shlos mem 	Final form. Only used at the end of a word.
-- ן 	n, m 	n, ŋ, m 	n, m 	lange nun 	Final form. Only used at the end of a word.
 - פּ 	p 	pey 	Has no separate final form.
-- פֿ 	f 	fey 	
+
+# Final forms:
+- ך 	lange khof 	Final form. Only used at the end of a word.
 - ץ 	lange tsadek 	Final form. Only used at the end of a word.
 
 # Only in Hebrew words:

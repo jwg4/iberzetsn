@@ -15,6 +15,9 @@ class TestYiddishToRoman(unittest.TestCase):
     def test_simple_word_3(self):
         self.assertEqual(yiddish_to_roman("שטײט"), "shteyt")
 
+    def test_simple_word_4(self):
+        self.assertEqual(yiddish_to_roman("פֿרום"), "frum")
+
     def test_exceptional_word(self):
         self.assertEqual(yiddish_to_roman("אויף"), "af")
 
