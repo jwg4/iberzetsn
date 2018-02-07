@@ -9,6 +9,8 @@ python:
 matrix:
   allow_failures:
     - python: '2.6'
+    - python: '2.7'
+    - python: 'pypy'
 install:
 - pip install flake8
 script:
