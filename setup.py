@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='iberzetsn',
-    version='0.0.1',
+    version='0.1.0',
     description='A library for Yiddish transliteration',
     url='https://github.com/jwg4/iberzetsn',
     author='Jack Grahl',
