@@ -1,3 +1,4 @@
+# coding=utf-8
 YIDDISH_LETTERS = [
     ("אֵ", "a"),
     ("אׇ", "o"),
